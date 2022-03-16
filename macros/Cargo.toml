@@ -1,0 +1,12 @@
+[package]
+name = "macros"
+publish = false
+version = "0.1.0"
+
+[lib]
+proc-macro = true
+
+[features]
+
+[dependencies]
+broken = { version = "0.1.0", default-features = false, path = "../broken" }

@@ -1,0 +1,17 @@
+[workspace]
+members = [
+    "broken",
+    "macros",
+]
+
+[package]
+name = "parent"
+version = "0.1.0"
+publish = false
+
+[features]
+default = []
+
+[dependencies]
+broken = { path = "broken" }
+macros = { path = "macros" }
