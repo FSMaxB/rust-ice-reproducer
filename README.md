@@ -1,6 +1,28 @@
 # Reproducer for a rust ICE (internal compiler error)
 
-Toolchain: nightly-2022-16-03
+```
+./rustc --version --verbose
+rustc 1.61.0-nightly (52b34550a 2022-03-15)
+binary: rustc
+commit-hash: 52b34550aca5f7dd7e152f773e3ab786acb86f6f
+commit-date: 2022-03-15
+host: x86_64-unknown-linux-gnu
+release: 1.61.0-nightly
+LLVM version: 14.0.0
+
+```
+
+```
+$ cargo +nightly --version --verbose
+cargo 1.61.0-nightly (65c8266 2022-03-09)
+release: 1.61.0-nightly
+commit-hash: 65c82664263feddc5fe2d424be0993c28d46377a
+commit-date: 2022-03-09
+host: x86_64-unknown-linux-gnu
+libgit2: 1.4.1 (sys:0.14.1 vendored)
+libcurl: 7.80.0-DEV (sys:0.4.51+curl-7.80.0 vendored ssl:OpenSSL/1.1.1m)
+os: Arch Linux Rolling Release [64-bit]
+```
 
 ## How to reproduce:
 
